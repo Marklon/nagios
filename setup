@@ -1,8 +1,4 @@
-# Source
-# http://www.tecmint.com/install-nagios-in-linux/
-
-
-
+# Source http://www.tecmint.com/install-nagios-in-linux/
 
 
 
@@ -32,7 +28,7 @@ $ systemctl start nagios -l
 $ vi /usr/local/nagios/var/nagios.log
 
 
-********************************************* Setup Instructions ********************************************************
+********************************************* Setup Configuration ********************************************************
 
 
 1. Setup Instructions
