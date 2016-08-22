@@ -9,14 +9,22 @@ $ /usr/local/nagios/etc/nagios.cfg
 
 
 ********************************************* Issues Experienced ********************************************************
-# If you have issues starting the nagios service, do a 
-$ systemctl start nagios -l
-# This will give you the error output, you can also check the logs @ 
+# Make sure the unzip command is installed on your machine as well
+$ yum install unzip
+# This caused the below errors
 
-$ vi /usr/local/nagios/var/nagios.log
 
 # Folder failed to create during the make install process, to resolve this 
 # Run the below command (this iss is permission based)
 $ /usr/bin/install -c -m 775 -o nagios -g nagcmd -d /usr/local/nagios/var/spool/checkresults
+
+
+
+# If you have issues starting the nagios service, do a 
+$ systemctl start nagios -l
+
+# This will give you the error output, you can also check the logs @ 
+$ vi /usr/local/nagios/var/nagios.log
+
 
 
