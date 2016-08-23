@@ -177,3 +177,7 @@ Your nagios is ready to work, please open it in your browser with “http://Your
 
 
 
+********************************************* Writing Nagios Checks ********************************************************
+
+# Source 
+# https://www.digitalocean.com/community/tutorials/how-to-create-nagios-plugins-with-bash-on-ubuntu-12-10
