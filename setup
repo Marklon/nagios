@@ -181,3 +181,4 @@ Your nagios is ready to work, please open it in your browser with “http://Your
 
 # Source 
 # https://www.digitalocean.com/community/tutorials/how-to-create-nagios-plugins-with-bash-on-ubuntu-12-10
+# https://www.digitalocean.com/community/tutorials/how-to-install-nagios-4-and-monitor-your-servers-on-centos-7
