@@ -1,6 +1,10 @@
 #!/bin/bash
 
+echo "Updating the System now"
+sudo yum update -y
+
 echo "Step 1: Install Required Dependencies"
+
 
 echo “Installing Dependencies”
 
@@ -61,7 +65,7 @@ make install-commandmode
 
 make install-config
 
-echo "Step 5: Customizing Nagios Configuration"
+echo "********************************Step 5: Customizing Nagios Configuration*********************************"
 
 echo "I will have to do this manually, the admin email address needs to be placed in"
 
@@ -79,6 +83,7 @@ cd /root/nagios
 
 cd nagios-plugins-2.1.2/
 wait
+
 ./configure --with-nagios-user=nagios --with-nagios-group=nagios
 wait
 
