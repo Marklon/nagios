@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -xev 
 
 echo "Updating the System now"
 sudo yum update -y
@@ -97,4 +97,5 @@ systemctl enable nagios
 wait
 systemctl start nagios
 wait
-htpasswd -s -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
+
+#htpasswd -s -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
